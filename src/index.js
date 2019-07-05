@@ -5,6 +5,8 @@ new Vue({
     render: h => h(App)
 }).$mount('#app')
 
+console.log(process.env)
+
 
 // console.log('hello webpack');
 // () => {

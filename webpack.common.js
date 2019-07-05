@@ -57,26 +57,6 @@ module.exports = {
                 ]
             },
             {
-                test: /.(sass|scss)$/,
-                use: [
-                    {
-                        loader: 'style-loader'
-                    },
-                    {
-                        loader: 'css-loader'
-                    },
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            implementation: require('dart-sass')
-                        }
-                    },
-                    {
-                        loader: 'postcss-loader'
-                    }
-                ]
-            },
-            {
                 test: /\.(jpe?g|png|gif)$/i,
                 use: [
                     {
@@ -136,6 +116,11 @@ module.exports = {
         }),
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        new webpack.DefinePlugin({
+            'process.env': {
+                VUE_APP_BASE_URL: JSON.stringify('http://localhsot:3000')
+            }
+        })
     ]
 }

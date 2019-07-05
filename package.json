@@ -5,23 +5,28 @@
   "repository": "https://github.com/tangmengcheng/my-vue-cli.git",
   "author": "tangmengcheng <1018663766@qq.com>",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack-dev-server"
+    "build": "webpack --config ./webpack.prod.js",
+    "dev": "webpack-dev-server --config ./webpack.dev.js"
   },
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.5.0",
     "@babel/polyfill": "^7.4.4",
     "@babel/preset-env": "^7.5.0",
+    "@intervolga/optimize-cssnano-plugin": "^1.0.6",
     "autoprefixer": "^9.6.0",
     "babel-loader": "^8.0.6",
     "cache-loader": "^4.0.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.3",
     "css-loader": "^3.0.0",
     "dart-sass": "^1.22.3",
     "file-loader": "^4.0.0",
     "html-webpack-plugin": "^3.2.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
@@ -32,8 +37,10 @@
     "vue-loader": "^15.7.0",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.35.2",
+    "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "@babel/runtime-corejs2": "^7.5.0",
