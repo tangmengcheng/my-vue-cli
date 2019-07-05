@@ -4,6 +4,8 @@
 > 要求
 - 1. ES6代码转化成ES5代码
 - babel-loader @babel/core @babel/preset-env
+- babel-loader 只会将ES6/7/8语法转换成ES5语法，但是对新的API不会转化  
+- @babel/polyfill 按需引入 core-js@2 @babel/runtime-corejs2
 - 2. sass less stylus 转css
 - 3. 解析.vue文件
 - 4. 解析图片，字体等资源
