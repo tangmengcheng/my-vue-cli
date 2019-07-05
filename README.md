@@ -7,6 +7,7 @@
 - babel-loader 只会将ES6/7/8语法转换成ES5语法，但是对新的API不会转化  
 - @babel/polyfill 按需引入 core-js@2 @babel/runtime-corejs2
 - 2. sass less stylus 转css
+- sass-loader node-sass dart-sass stylus stylus-loader less less-loader
 - 3. 解析.vue文件
 - 4. 解析图片，字体等资源
 - 5. 自动添加css各浏览器厂商的前缀
