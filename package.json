@@ -9,6 +9,9 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "babel-loader": "^8.0.6",
     "webpack": "^4.35.2",
     "webpack-cli": "^3.3.5"
   }

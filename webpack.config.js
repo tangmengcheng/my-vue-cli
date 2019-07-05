@@ -6,5 +6,16 @@ module.exports = {
     output: { // 打包文件的出口
         filename: 'bound.js', // 打包文件名
         path: path.resolve(__dirname, 'dist') // 打包文件存放的目录
+    },
+    module: { // 模块
+        rules: [ // 规则
+            {
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader'
+                }
+            }
+        ]
     }
 }
