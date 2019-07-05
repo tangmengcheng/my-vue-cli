@@ -5,7 +5,8 @@
   "repository": "https://github.com/tangmengcheng/my-vue-cli.git",
   "author": "tangmengcheng <1018663766@qq.com>",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "webpack-dev-server"
   },
   "license": "MIT",
   "devDependencies": {
@@ -16,6 +17,8 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^3.0.0",
     "dart-sass": "^1.22.3",
+    "file-loader": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
     "postcss-loader": "^3.0.0",
@@ -23,8 +26,10 @@
     "style-loader": "^0.23.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "url-loader": "^2.0.1",
     "webpack": "^4.35.2",
-    "webpack-cli": "^3.3.5"
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
     "@babel/runtime-corejs2": "^7.5.0",
