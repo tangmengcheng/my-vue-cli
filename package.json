@@ -5,7 +5,7 @@
   "repository": "https://github.com/tangmengcheng/my-vue-cli.git",
   "author": "tangmengcheng <1018663766@qq.com>",
   "scripts": {
-    "build": "webpack ./src/index.js --mode development"
+    "build": "webpack"
   },
   "license": "MIT",
   "devDependencies": {
