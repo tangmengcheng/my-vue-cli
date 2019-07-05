@@ -1,0 +1,15 @@
+{
+  "name": "my-vue-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tangmengcheng/my-vue-cli.git",
+  "author": "tangmengcheng <1018663766@qq.com>",
+  "scripts": {
+    "build": "webpack ./src/index.js --mode development"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  }
+}
