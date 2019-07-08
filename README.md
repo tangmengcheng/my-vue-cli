@@ -36,3 +36,18 @@ webpack.common.js  公共配置
 4. sourceMap
 5. 构建前清除上一次的构建
 6. ....
+
+babel-loader 只会将ES6/7/8 语法转换为ES5语法, 但是对新api并不会转换
+我们可以通过babel-polyfill对一些不支持顶语法的客户端提供新语法的实现
+
+sass-loader, dart-sass 主要是将scss/sass语法转为css
+css-loader 主要是解析css文件
+style-loader 主要是将css解析到HTML页面的style上
+
+file-loader 解析文件url, 并将文件复制到输出的目录中
+url-loader 功能与file-loader类似，如果文件小于限制的大小。则会返回base64编码。否则与file-loader类似。
+
+vue-loader 用于解析.vue文件
+vue-template-compiler 用于编译模板
+cache-loader 用于缓存loader编译的结果
+thread-loader 使用worker池来运行loader, 每个worker都是一个node.js进程
