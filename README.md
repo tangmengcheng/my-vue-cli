@@ -51,3 +51,11 @@ webpack.common.js  公共配置
 - vue-template-compiler 用于编译模板
 - cache-loader 用于缓存loader编译的结果
 - thread-loader 使用worker池来运行loader, 每个worker都是一个node.js进程
+
+
+- 重点
+require.context(directory, useSubdirectories, regExp)
+接收三个参数：
+directory：说明需要检索的目录
+useSubdirectories：是否检索子目录
+regExp: 匹配文件的正则表达式,一般是文件名

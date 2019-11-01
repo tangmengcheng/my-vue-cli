@@ -16,6 +16,7 @@ module.exports = {
         contentBase: './dist'
     },
     resolve: {
+        extensions: ['.js', '.json', '.vue'],
         alias: {
             vue$: 'vue/dist/vue.runtime.esm.js'
         }
